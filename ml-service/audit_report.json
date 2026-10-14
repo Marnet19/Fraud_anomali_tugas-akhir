@@ -1,0 +1,81 @@
+{
+  "warnings": [
+    "Jumlah fitur = 377 seperti di naskah (aktual: 400)",
+    "train_raw.csv hanya data LATIH (bukan seluruh dataset). Jika jumlahnya = total, P99 dan tingkat fraud per ProductCD memakai label data uji (kebocoran ke NLG)"
+  ],
+  "environment": {
+    "python": "3.14.4",
+    "scikit_learn": "1.8.0",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6"
+  },
+  "model": {
+    "contamination": "auto",
+    "max_samples": "auto",
+    "n_estimators": 100,
+    "offset_": -0.5,
+    "n_features_in_": 400
+  },
+  "train_test_identical_rows": 1691,
+  "flagged": {
+    "predict": 3973,
+    "s_ge_0.5_true_s": 3973,
+    "evaluasi_py": 3973
+  },
+  "metrics": {
+    "pr_auc": 0.1441,
+    "roc_auc": 0.7653,
+    "at_model_predict": {
+      "tp": 958,
+      "fp": 3015,
+      "tn": 110960,
+      "fn": 3175,
+      "flagged": 3973,
+      "flagged_pct": 3.364,
+      "precision": 0.2411,
+      "recall": 0.2318,
+      "f1": 0.2364
+    },
+    "at_tau_0.5_true_s": {
+      "tp": 958,
+      "fp": 3015,
+      "tn": 110960,
+      "fn": 3175,
+      "flagged": 3973,
+      "flagged_pct": 3.364,
+      "precision": 0.2411,
+      "recall": 0.2318,
+      "f1": 0.2364
+    }
+  },
+  "pr_auc_ci95": [
+    0.1376,
+    0.152
+  ],
+  "baseline_amount": {
+    "pr_auc": 0.0391,
+    "roc_auc": 0.5004
+  },
+  "top_single_feature_auc": {
+    "C4": 0.6913,
+    "C8": 0.686,
+    "V199": 0.6817,
+    "C10": 0.6802,
+    "V190": 0.6791,
+    "V187": 0.6786,
+    "V176": 0.6764,
+    "id_17": 0.6755,
+    "V186": 0.6755,
+    "V201": 0.6751
+  },
+  "rules": {
+    "p99": 1104.0,
+    "product_fraud_rate_pct": {
+      "C": 11.69,
+      "H": 4.77,
+      "R": 3.78,
+      "S": 5.9,
+      "W": 2.04
+    }
+  }
+}

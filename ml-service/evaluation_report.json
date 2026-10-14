@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-10-10T10:17:41",
+  "test_data_count": 118108,
+  "threshold_tau": 0.5,
+  "model_offset": -0.5,
+  "environment": {
+    "scikit_learn": "1.8.0",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6"
+  },
+  "metrics": {
+    "pr_auc": 0.1441,
+    "roc_auc": 0.7653,
+    "precision": 0.2411,
+    "recall": 0.2318,
+    "f1_score": 0.2364,
+    "accuracy": 0.9476
+  },
+  "matrix": {
+    "tp": 958,
+    "fp": 3015,
+    "tn": 110960,
+    "fn": 3175
+  }
+}
